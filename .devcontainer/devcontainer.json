@@ -1,0 +1,21 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "npm install",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "src/App.vue"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+          "Vue.volar"
+      ]
+    }
+  },
+  "forwardPorts": [5173]
+}
